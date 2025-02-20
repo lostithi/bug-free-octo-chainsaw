@@ -8,7 +8,7 @@ enum AccType{
     Saving,
     Current
 }
-public class Co{
+public class bankApp{
     String name;
     int acc_no;
 
