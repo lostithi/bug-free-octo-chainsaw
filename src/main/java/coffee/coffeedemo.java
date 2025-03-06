@@ -5,6 +5,21 @@
 import java.time.LocalDateTime;
 import java.util.*;
 
+enum Category {
+    BEVERAGE, FOOD, OTHER;
+    
+    // Convert a string from the file into a Category.
+    public static Category fromString(String s) {
+        s = s.trim().toUpperCase();
+        if (s.startsWith("BEV"))
+            return BEVERAGE;
+        else if (s.startsWith("FOOD"))
+            return FOOD;
+        else
+            return OTHER;
+    }
+}
+
 class menuItemList{
         public String itemid;
         public String name;
